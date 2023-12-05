@@ -43,3 +43,6 @@ if '@BIBLIOGRAPHYLOCATION@' in formatted_references:
 # Write the formatted file to disk.
 with open('main.tex', 'w') as output_file:
     output_file.write(formatted_references)
+    
+# Stage the modified main.tex to be committed.
+os.system('/usr/bin/env bash -c "git add main.tex"')

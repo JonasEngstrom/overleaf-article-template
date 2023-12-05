@@ -33,9 +33,6 @@ main.pdf
 **/.DS_Store
 EOF
     cp hooks/overleaf/pre-commit.py .git/modules/overleaf/hooks/pre-commit
-    git add -A
-    git commit -m "$1"
-    git push -u origin main
 fi
 
 echo "Pulling from Overleaf."
