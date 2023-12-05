@@ -32,6 +32,7 @@ if [ ! -d ./overleaf ]
 main.pdf
 **/.DS_Store
 EOF
+    cp hooks/overleaf/pre-commit.py .git/modules/overleaf/hooks/pre-commit
 fi
 
 echo "Pulling from Overleaf."
