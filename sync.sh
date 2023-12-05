@@ -27,13 +27,21 @@ if [ ! -d ./overleaf ]
     echo "Enter Overleaf SSH or HTTPS address:"
     read OVERLEAF_ADDRESS
     git submodule add $OVERLEAF_ADDRESS overleaf
+    git -C overleaf checkout master
     git -C overleaf pull
     cat << EOF >> overleaf/.gitignore
 main.pdf
 **/.DS_Store
 EOF
+fi
+
+if [ ! -f .git/modules/overleaf/hooks/pre-commit ]
+  then
     cp hooks/overleaf/pre-commit.py .git/modules/overleaf/hooks/pre-commit
 fi
+
+echo "Checking out master branch on Overleaf."
+git -C overleaf checkout master
 
 echo "Pulling from Overleaf."
 git -C overleaf pull
