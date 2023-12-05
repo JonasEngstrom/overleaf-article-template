@@ -33,7 +33,12 @@ formatted_references = re.sub('@STARTCITE@.*@ENDCITE@', format_reference, relati
 # Format bibliography if preserve-cite-keys.csl is being used.
 if '@BIBLIOGRAPHYLOCATION@' in formatted_references:
     formatted_references = re.sub(r'\\hypertarget{refs}{}\n\\begin{CSLReferences}.*\\end{CSLReferences}',
-                                    r'\\printbibliography', formatted_references, flags=re.DOTALL)
+                                    r'\\printbibliography',
+                                    formatted_references,
+                                    flags=re.DOTALL)
+    formatted_references = re.sub(r'pdfcreator={LaTeX via pandoc}}\n\n\\title{',
+                                  r'pdfcreator={LaTeX via pandoc}}\n\n\\usepackage[style=vancouver]{biblatex}\n\\addbibresource{references.bib}\n\n\\title{',
+                                  formatted_references)
 
 # Write the formatted file to disk.
 with open('main.tex', 'w') as output_file:
