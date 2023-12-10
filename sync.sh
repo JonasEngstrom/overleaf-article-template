@@ -3,12 +3,14 @@
 # Stages, commits, and pushes files to both Overleaf and GitHub.
 # Sets up sync with GitHub and Overleaf on first run.
 
+# Check that commit message is passed to the script.
 if [ $# -lt 1 ]
   then
     echo "Error: You must enter a commit message. (E.g. ./sync.sh \"This commit will surely fix all the bugs.\") Exiting." 1>&2
     exit 1
 fi
 
+# Check that GitHub sync is set up.
 if [ ! -d ./.git/refs/remotes ]
   then
     echo "GitHub not set up."
@@ -21,6 +23,7 @@ if [ ! -d ./.git/refs/remotes ]
     git push -u origin main
 fi
 
+# Check that Overleaf sync is set up.
 if [ ! -d ./overleaf ]
   then
     echo "Overleaf not set up."
@@ -35,17 +38,20 @@ main.pdf
 EOF
 fi
 
+# Check that pre-commit hook in Overleaf submodule is set up.
 if [ ! -f .git/modules/overleaf/hooks/pre-commit ]
   then
     cp hooks/overleaf/pre-commit.py .git/modules/overleaf/hooks/pre-commit
 fi
 
+# Check that main branch is checked out.
 if [ $(git symbolic-ref --short -q HEAD) != "main" ]
   then
     echo "Not on main. Make sure the branch main is checked out before running sync.sh."
     exit 1
 fi
 
+# Perform sync with bout Overleaf and GitHub.
 echo "Checking out master branch on Overleaf."
 git -C overleaf checkout master
 
