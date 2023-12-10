@@ -40,6 +40,12 @@ if [ ! -f .git/modules/overleaf/hooks/pre-commit ]
     cp hooks/overleaf/pre-commit.py .git/modules/overleaf/hooks/pre-commit
 fi
 
+if [ $(git symbolic-ref --short -q HEAD) != "main" ]
+  then
+    echo "Not on main. Make sure the branch main is checked out before running sync.sh."
+    exit 1
+fi
+
 echo "Checking out master branch on Overleaf."
 git -C overleaf checkout master
 
