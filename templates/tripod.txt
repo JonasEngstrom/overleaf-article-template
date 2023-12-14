@@ -1,0 +1,134 @@
+<!-- This template follows the: -->
+<!-- TRIPOD Checklist -->
+<!-- Published under a Creative Commons Attribution License in (among other places): -->
+<!-- Collins GS, Reitsma JB, Altman DG, Moons KG. Transparent reporting of a multivariable prediction model for individual prognosis or diagnosis (TRIPOD): the TRIPOD Statement. BMC Med. 2015;13:1. Published 2015 Jan 6. doi:10.1186/s12916-014-0241-z -->
+
+## Title and abstract
+
+### Title
+
+<!-- Identify the study as developing and/or validating a multivariable prediction model, the target population, and the outcome to be predicted. -->
+
+### Abstract
+
+<!-- Provide a summary of objectives, study design, setting, participants, sample size, predictors, outcome, statistical analysis, results, and conclusions. -->
+
+## Introduction
+
+### Background and objectives
+
+<!-- Explain the medical context (including whether diagnostic or prognostic) and rationale for developing or validating the multivariable prediction model, including references to existing models. -->
+
+<!-- Specify the objectives, including whether the study describes the development or validation of the model or both. -->
+
+## Methods
+
+### Source of data
+
+<!-- Describe the study design or source of data (e.g., randomized trial, cohort, or registry data), separately for the development and validation data sets, if applicable. -->
+
+<!-- Specify the key study dates, including start of accrual; end of accrual; and, if applicable, end of follow-up. -->
+
+### Participants
+
+<!-- Specify key elements of the study setting (e.g., primary care, secondary care, general population) including number and location of centres. -->
+
+<!-- Describe eligibility criteria for participants. -->
+
+<!-- Give details of treatments received, if relevant. -->
+
+### Outcome
+
+<!-- Clearly define the outcome that is predicted by the prediction model, including how and when assessed. -->
+
+<!-- Report any actions to blind assessment of the outcome to be predicted. -->
+
+### Predictors
+
+<!-- Clearly define all predictors used in developing or validating the multivariable prediction model, including how and when they were measured. -->
+
+<!-- Report any actions to blind assessment of predictors for the outcome and other predictors. -->
+
+### Sample size
+
+<!-- Explain how the study size was arrived at. -->
+
+### Missing data
+
+<!-- Describe how missing data were handled (e.g., complete-case analysis, single imputation, multiple imputation) with details of any imputation method. -->
+
+### Statistical analysis methods
+
+<!-- (Development studies) Describe how predictors were handled in the analyses. -->
+
+<!-- (Development studies) Specify type of model, all model-building procedures (including any predictor selection), and method for internal validation. -->
+
+<!-- (Validation studies) For validation, describe how the predictions were calculated. -->
+
+<!-- Specify all measures used to assess model performance and, if relevant, to compare multiple models. -->
+
+<!-- (Validation studies) Describe any model updating (e.g., recalibration) arising from the validation, if done. -->
+
+### Risk groups
+
+<!-- Provide details on how risk groups were created, if done. -->
+
+### Development vs. validation
+
+<!-- (Validation studies) For validation, identify any differences from the development data in setting, eligibility criteria, outcome, and predictors. -->
+
+## Results
+
+### Participants
+
+<!-- Describe the flow of participants through the study, including the number of participants with and without the outcome and, if applicable, a summary of the follow-up time. A diagram may be helpful. -->
+
+<!-- Describe the characteristics of the participants (basic demographics, clinical features, available predictors), including the number of participants with missing data for predictors and outcome. -->
+
+<!-- (Validation studies) For validation, show a comparison with the development data of the distribution of important variables (demographics, predictors and outcome). -->
+
+### Model development
+
+<!-- (Development studies) Specify the number of participants and outcome events in each analysis. -->
+
+<!-- (Development studies) If done, report the unadjusted association between each candidate predictor and outcome. -->
+
+### Model specification
+
+<!-- (Development studies) Present the full prediction model to allow predictions for individuals (i.e., all regression coefficients, and model intercept or baseline survival at a given time point). -->
+
+<!-- (Development studies) Explain how to the use the prediction model. -->
+
+### Model performance
+
+<!-- Report performance measures (with CIs) for the prediction model. -->
+
+### Model-updating
+
+<!-- (Validation studies) If done, report the results from any model updating (i.e., model specification, model performance). -->
+
+## Discussion
+
+### Limitations
+
+<!-- Discuss any limitations of the study (such as nonrepresentative sample, few events per predictor, missing data). -->
+
+### Interpretation
+
+<!-- (Validation studies) For validation, discuss the results with reference to performance in the development data, and any other validation data. -->
+
+<!-- Give an overall interpretation of the results, considering objectives, limitations, results from similar studies, and other relevant evidence. -->
+
+### Implications
+
+<!-- Discuss the potential clinical use of the model and implications for future research. -->
+
+## Other information
+
+### Supplementary information
+
+<!-- Provide information about the availability of supplementary resources, such as study protocol, Web calculator, and data sets. -->
+
+### Funding
+
+<!-- Give the source of funding and the role of the funders for the present study. -->
