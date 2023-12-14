@@ -2,7 +2,7 @@
 
 ## TL;DR
 
-Get started by following [these steps](https://github.com/JonasEngstrom/overleaf-article-template/wiki/Setup:-New-Article).
+Get started by following [these steps](https://github.com/JonasEngstrom/overleaf-article-template/wiki/Setup:-New-Article) to create a new article or [these steps](https://github.com/JonasEngstrom/overleaf-article-template/wiki/Joining-an-Existing-Project) to join an existing project.
 
 ## Description
 
