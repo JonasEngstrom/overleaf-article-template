@@ -13,36 +13,38 @@ import re
 # Make figure paths relative.
 working_directory = os.getcwd()
 
-with open('main.tex', 'r') as input_file:
-    input_text = input_file.read()
+# Loop through the *.tex files in the overleaf repo.
+for tex_file in list(filter(lambda x: x.endswith('.tex'), os.listdir())):
+    with open(tex_file, 'r') as input_file:
+        input_text = input_file.read()
 
-relative_paths = input_text.replace(working_directory, '.')
+    relative_paths = input_text.replace(working_directory, '.')
 
-# Format references if preserve-cite-keys.csl is being used.
-def format_reference(match_object):
-    return (
-        match_object
-            .group(0)
-            .replace('@STARTCITE@', '\cite{')
-            .replace('\\_', '_')
-            .replace('@ENDCITE@', '}')
-    )
+    # Format references if preserve-cite-keys.csl is being used.
+    def format_reference(match_object):
+        return (
+            match_object
+                .group(0)
+                .replace('@STARTCITE@', '\cite{')
+                .replace('\\_', '_')
+                .replace('@ENDCITE@', '}')
+        )
 
-formatted_references = re.sub('@STARTCITE@.*@ENDCITE@', format_reference, relative_paths)
+    formatted_references = re.sub('@STARTCITE@.*@ENDCITE@', format_reference, relative_paths)
 
-# Format bibliography if preserve-cite-keys.csl is being used.
-if '@BIBLIOGRAPHYLOCATION@' in formatted_references:
-    formatted_references = re.sub(r'\\hypertarget{refs}{}\n\\begin{CSLReferences}.*\\end{CSLReferences}',
-                                    r'\\printbibliography',
-                                    formatted_references,
-                                    flags=re.DOTALL)
-    formatted_references = re.sub(r'pdfcreator={LaTeX via pandoc}}\n\n\\title{',
-                                  r'pdfcreator={LaTeX via pandoc}}\n\n\\usepackage[style=vancouver]{biblatex}\n\\addbibresource{references.bib}\n\n\\title{',
-                                  formatted_references)
+    # Format bibliography if preserve-cite-keys.csl is being used.
+    if '@BIBLIOGRAPHYLOCATION@' in formatted_references:
+        formatted_references = re.sub(r'\\hypertarget{refs}{}\n\\begin{CSLReferences}.*\\end{CSLReferences}',
+                                        r'\\printbibliography',
+                                        formatted_references,
+                                        flags=re.DOTALL)
+        formatted_references = re.sub(r'pdfcreator={LaTeX via pandoc}}\n\n\\title{',
+                                    r'pdfcreator={LaTeX via pandoc}}\n\n\\usepackage[style=vancouver]{biblatex}\n\\addbibresource{references.bib}\n\n\\title{',
+                                    formatted_references)
 
-# Write the formatted file to disk.
-with open('main.tex', 'w') as output_file:
-    output_file.write(formatted_references)
+    # Write the formatted file to disk.
+    with open(tex_file, 'w') as output_file:
+        output_file.write(formatted_references)
     
-# Stage the modified main.tex to be committed.
-os.system('/usr/bin/env bash -c "git add main.tex"')
+# Stage the modified *.tex files to be committed.
+os.system('/usr/bin/env bash -c "git add *.tex"')
