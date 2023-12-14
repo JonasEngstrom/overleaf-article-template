@@ -1,0 +1,100 @@
+<!-- This template follows the: -->
+<!-- The CARE guidelines checklist -->
+<!-- Published under a Creative Commons Attribution-NonCommercial License in (among other places): -->
+<!-- Gagnier JJ, Kienle G, Altman DG, et al. The CARE guidelines: consensus-based clinical case reporting guideline development. BMJ Case Rep. 2013;2013:bcr2013201554. Published 2013 Oct 23. doi:10.1136/bcr-2013-201554 -->
+
+## Title
+
+<!-- The words ‘case report’ (or ‘case study’) should appear in the title along with phenomenon of greatest interest (eg, symptom, diagnosis, test, intervention) -->
+
+## Keywords
+
+<!-- The key elements of this case in 2–5 words -->
+
+## Abstract
+
+### Introduction
+
+<!-- What does this case add? -->
+
+### Case Presentation
+
+<!-- The main symptoms of the patient -->
+
+<!-- The main clinical findings -->
+
+<!-- The main diagnoses and interventions -->
+
+<!-- The main outcomes -->
+
+### Conclusion
+
+<!-- What were the main ‘take-away’ lessons from this case? -->
+
+## Introduction
+
+<!-- Brief background summary of this case referencing the relevant medical literature -->
+
+## Patient information
+
+<!-- Demographic information (eg, age, gender, ethnicity, occupation) -->
+
+<!-- Main symptoms of the patient (his or her chief symptoms) -->
+
+<!-- Medical, family, and psychosocial history—including diet, lifestyle, and genetic information whenever possible, and details about relevant comorbidities including past interventions and their outcomes -->
+
+## Clinical findings
+
+<!-- Describe the relevant physical examination (PE) findings -->
+
+## Timeline
+
+<!-- Depict important dates and times in this case (table or figure) -->
+
+## Diagnostic assessment
+
+<!-- Diagnostic methods (eg, PE, laboratory testing, imaging, questionnaires) -->
+
+<!-- Diagnostic challenges (eg, financial, language/cultural) -->
+
+<!-- Diagnostic reasoning including other diagnoses considered -->
+
+<!-- Prognostic characteristics (eg, staging) where applicable -->
+
+## Therapeutic intervention
+
+<!-- Types of intervention (eg, pharmacologic, surgical, preventive, self-care) -->
+
+<!-- Administration of intervention (eg, dosage, strength, duration) -->
+
+<!-- Changes in intervention (with rationale) -->
+
+## Follow-up and outcomes
+
+<!-- Summarise the clinical course of all follow-up visits including -->
+
+<!-- Clinician and patient-assessed outcomes -->
+
+<!-- Important follow-up test results (positive or negative) -->
+
+<!-- Intervention adherence and tolerability (and how this was assessed) -->
+
+<!-- Adverse and unanticipated events -->
+
+## Discussion
+
+<!-- The strengths and limitations of the management of this case -->
+
+<!-- The relevant medical literature -->
+
+<!-- The rationale for conclusions (including assessments of cause and effect) -->
+
+<!-- The main ‘take-away’ lessons of this case report -->
+
+## Patient perspective
+
+<!-- The patient should share his or her perspective or experience whenever possiblev -->
+
+## Informed consent
+
+<!-- Did the patient give informed consent? Please provide if requested -->
