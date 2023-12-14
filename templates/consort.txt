@@ -1,6 +1,6 @@
 <!-- This template follows the: -->
 <!-- CONSORT 2010 checklist of information to include when reporting a randomised trial -->
-<!-- Published under a creative Creative Commons Attribution License in (among other places): -->
+<!-- Published under a Creative Commons Attribution License in (among other places): -->
 <!-- Schulz, K.F., Altman, D.G., Moher, D. et al. CONSORT 2010 Statement: updated guidelines for reporting parallel group randomised trials. BMC Med 8, 18 (2010). https://doi.org/10.1186/1741-7015-8-18 -->
 
 ## Title and abstract

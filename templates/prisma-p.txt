@@ -1,6 +1,6 @@
 <!-- This template follows the: -->
 <!-- PRISMA-P (Preferred Reporting Items for Systematic review and Meta-Analysis Protocols) 2015 checklist -->
-<!-- Published under a creative Creative Commons Attribution License in (among other places): -->
+<!-- Published under a Creative Commons Attribution License in (among other places): -->
 <!-- Moher, D., Shamseer, L., Clarke, M. et al. Preferred reporting items for systematic review and meta-analysis protocols (PRISMA-P) 2015 statement. Syst Rev 4, 1 (2015). https://doi.org/10.1186/2046-4053-4-1 -->
 
 ## Administrative information

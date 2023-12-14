@@ -1,6 +1,6 @@
 <!-- This template follows the: -->
 <!-- PRISMA 2020 Checklist -->
-<!-- Published under a creative Creative Commons Attribution License in (among other places): -->
+<!-- Published under a Creative Commons Attribution License in (among other places): -->
 <!-- Page MJ, McKenzie JE, Bossuyt PM, et al. The PRISMA 2020 statement: An updated guideline for reporting systematic reviews. PLoS Med. 2021;18(3):e1003583. Published 2021 Mar 29. doi:10.1371/journal.pmed.1003583 -->
 
 ## Title

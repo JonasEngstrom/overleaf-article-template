@@ -1,6 +1,6 @@
 <!-- This template follows the: -->
 <!-- STROBE Statement—checklist of items that should be included in reports of observational studies -->
-<!-- Published under a creative Creative Commons Attribution License in (among other places): -->
+<!-- Published under a Creative Commons Attribution License in (among other places): -->
 <!-- von Elm E, Altman DG, Egger M, et al. The Strengthening the Reporting of Observational Studies in Epidemiology (STROBE) statement: guidelines for reporting observational studies. PLoS Med. 2007;4(10):e296. doi:10.1371/journal.pmed.0040296 -->
 
 ## Title and abstract
