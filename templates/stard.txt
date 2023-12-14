@@ -1,0 +1,130 @@
+<!-- This template follows the: -->
+<!-- STARD (Standards for Reporting Diagnostic accuracy studies) 2015 Checklist -->
+<!-- Published under a Creative Commons Attribution-NonCommercial License in (among other places): -->
+<!-- Bossuyt PM, Reitsma JB, Bruns DE, et al. STARD 2015: an updated list of essential items for reporting diagnostic accuracy studies. BMJ. 2015;351:h5527. Published 2015 Oct 28. doi:10.1136/bmj.h5527 -->
+<!-- The abstract section is available from here, also under a Creative Commons Attribution-NonCommercial License: -->
+<!-- Cohen JF, Korevaar DA, Gatsonis CA, et al. STARD for Abstracts: essential items for reporting diagnostic accuracy studies in journal or conference abstracts. BMJ. 2017;358:j3751. Published 2017 Aug 17. doi:10.1136/bmj.j3751 -->
+
+## Title or abstract
+
+<!-- Identification as a study of diagnostic accuracy using at least one measure of accuracy (such as sensitivity, specificity, predictive values, or AUC) -->
+
+## Abstract
+
+<!-- Identification as a study of diagnostic accuracy using at least one measure of accuracy (such as sensitivity, specificity, predictive values, or AUC) -->
+
+### Background and Objectives
+
+<!-- Study objectives -->
+
+### Methods
+
+<!-- Data collection: whether this was a prospective or retrospective study -->
+
+<!-- Eligibility criteria for participants and settings where the data were collected -->
+
+<!-- Whether participants formed a consecutive, random, or convenience series -->
+
+<!-- Description of the index test and reference standard -->
+
+### Results
+
+<!-- Number of participants with and without the target condition included in the analysis -->
+
+<!-- Estimates of diagnostic accuracy and their precision (such as 95% confidence intervals) -->
+
+### Discussion
+
+<!-- General interpretation of the results -->
+
+<!-- Implications for practice, including the intended use of the index test -->
+
+### Registration
+
+<!-- Registration number and name of registry -->
+
+## Introduction
+
+<!-- Scientific and clinical background, including the intended use and clinical role of the index test -->
+
+<!-- Study objectives and hypotheses -->
+
+## Methods
+
+### Study design
+
+<!-- Whether data collection was planned before the index test and reference standard were performed (prospective study) or after (retrospective study) -->
+
+### Participants
+
+<!-- Eligibility criteria -->
+
+<!-- On what basis potentially eligible participants were identified (such as symptoms, results from previous tests, inclusion in registry) -->
+
+<!-- Where and when potentially eligible participants were identified (setting, location and dates) -->
+
+<!-- Whether participants formed a consecutive, random or convenience series -->
+
+### Test methods
+
+<!-- Index test, in sufficient detail to allow replication -->
+
+<!-- Reference standard, in sufficient detail to allow replication -->
+
+<!-- Rationale for choosing the reference standard (if alternatives exist) -->
+
+<!-- Definition of and rationale for test positivity cut-offs or result categories of the index test, distinguishing pre-specified from exploratory -->
+
+<!-- Definition of and rationale for test positivity cut-offs or result categories of the reference standard, distinguishing pre-specified from exploratory -->
+
+<!-- Whether clinical information and reference standard results were available to the performers/readers of the index test -->
+
+<!-- Whether clinical information and index test results were available to the assessors of the reference standard -->
+
+### Analysis
+
+<!-- Methods for estimating or comparing measures of diagnostic accuracy -->
+
+<!-- How indeterminate index test or reference standard results were handled -->
+
+<!-- How missing data on the index test and reference standard were handled -->
+
+<!-- Any analyses of variability in diagnostic accuracy, distinguishing pre-specified from exploratory -->
+
+<!-- Intended sample size and how it was determined -->
+
+## Results
+
+### Participants
+
+<!-- Flow of participants, using a diagram -->
+
+<!-- Baseline demographic and clinical characteristics of participants -->
+
+<!-- Distribution of severity of disease in those with the target condition -->
+
+<!-- Distribution of alternative diagnoses in those without the target condition -->
+
+<!-- Time interval and any clinical interventions between index test and reference standard -->
+
+### Test results
+
+<!-- Cross tabulation of the index test results (or their distribution) by the results of the reference standard -->
+
+<!-- Estimates of diagnostic accuracy and their precision (such as 95% confidence intervals) -->
+
+<!-- Any adverse events from performing the index test or the reference standard -->
+
+## Discussion
+
+<!-- Study limitations, including sources of potential bias, statistical uncertainty, and generalisability -->
+
+<!-- Implications for practice, including the intended use and clinical role of the index test -->
+
+## Other information
+
+<!-- Registration number and name of registry -->
+
+<!-- Where the full study protocol can be accessed -->
+
+<!-- Sources of funding and other support; role of funders -->
