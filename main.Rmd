@@ -30,5 +30,3 @@ knitr::opts_chunk$set(echo = TRUE)
 # Disable the previous line and enable the subsequent to hide code chunks.
 # knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
 ```
-
-## References
