@@ -25,7 +25,7 @@ for tex_file in list(filter(lambda x: x.endswith('.tex'), os.listdir())):
         return (
             match_object
                 .group(0)
-                .replace('@STARTCITE@', '\cite{')
+                .replace('@STARTCITE@', '\\cite{')
                 .replace('\\_', '_')
                 .replace('@ENDCITE@', '}')
         )
@@ -34,7 +34,7 @@ for tex_file in list(filter(lambda x: x.endswith('.tex'), os.listdir())):
 
     # Format bibliography if preserve-cite-keys.csl is being used.
     if '@BIBLIOGRAPHYLOCATION@' in formatted_references:
-        formatted_references = re.sub(r'\\hypertarget{refs}{}\n\\begin{CSLReferences}.*\\end{CSLReferences}',
+        formatted_references = re.sub(r'\\phantomsection\\label{refs}\n\\begin{CSLReferences}.*\\end{CSLReferences}',
                                         r'\\printbibliography',
                                         formatted_references,
                                         flags=re.DOTALL)
