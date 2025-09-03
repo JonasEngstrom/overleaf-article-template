@@ -77,7 +77,7 @@ class ReferenceChecker:
         await asyncio.gather(*[self.get_request(number, url) for number, url in self.parsed_file.items()])
     
     def get_issns(self) -> None:
-        """Extract ISSNs from HTTP resonpses."""
+        """Extract ISSNs from HTTP responses."""
         issn_pattern = re.compile('issn.*([0-9]{4}-[0-9]{4})', re.IGNORECASE)
         for number, data in self.response_dict.items():
             if data['response']:
