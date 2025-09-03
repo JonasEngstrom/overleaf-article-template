@@ -6,3 +6,4 @@ overleaf
 .venv
 .coverage
 __pycache__
+test.sh
