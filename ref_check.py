@@ -4,6 +4,8 @@ import os
 import sys
 import argparse
 import re
+import asyncio
+import requests
 
 default_file_path = os.path.join('overleaf', 'main.tex')
 
@@ -23,6 +25,7 @@ class ReferenceChecker:
         self.check_if_file_exists(file_path)
         raw_file = self.read_file_contents(file_path)
         self.parsed_file = self.parse_file(raw_file)
+        self.response_dict = {}
     
     def check_if_file_exists(self, file_path: str) -> None:
         """Exit if file does not exist."""
@@ -58,6 +61,18 @@ class ReferenceChecker:
                 pass
         
         return return_dict
+    
+    async def get_request(self, number: int, url: str) -> None:
+        """Make an HTTP get request to a URL in a dict, by number key."""
+        try:
+            response = requests.get(url)
+            self.response_dict[number] = {'url': url, 'response': response}
+        except:
+            self.response_dict[number] = {'url': None, 'response': None}
+    
+    async def get_all_requests(self) -> None:
+        """Make parallel HTTP get requests."""
+        await asyncio.gather(*[self.get_request(number, url) for number, url in self.parsed_file.items()])
 
 def main() -> None:
     """Execute script."""
