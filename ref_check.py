@@ -73,6 +73,18 @@ class ReferenceChecker:
     async def get_all_requests(self) -> None:
         """Make parallel HTTP get requests."""
         await asyncio.gather(*[self.get_request(number, url) for number, url in self.parsed_file.items()])
+    
+    def get_issns(self) -> None:
+        """Extract ISSNs from HTTP resonpses."""
+        issn_pattern = re.compile('issn.*([0-9]{4}-[0-9]{4})', re.IGNORECASE)
+        for number, data in self.response_dict.items():
+            if data['response']:
+                data['issn'] = re.search(issn_pattern, data['response'].text)
+                if data['issn']:
+                    data['issn'] = data['issn'].group(1)
+            else:
+                data['issn'] = None
+        self.response_dict[number] = data
 
 def main() -> None:
     """Execute script."""
