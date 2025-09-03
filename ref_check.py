@@ -3,6 +3,7 @@
 import os
 import sys
 import argparse
+import re
 
 default_file_path = os.path.join('overleaf', 'main.tex')
 
@@ -21,6 +22,7 @@ class ReferenceChecker:
         """
         self.check_if_file_exists(file_path)
         raw_file = self.read_file_contents(file_path)
+        self.parsed_file = self.parse_file(raw_file)
     
     def check_if_file_exists(self, file_path: str) -> None:
         """Exit if file does not exist."""
@@ -32,6 +34,30 @@ class ReferenceChecker:
             raw_file = read_file.readlines()
         
         return raw_file
+    
+    def parse_file(self, raw_file: list) -> dict:
+        """Parse LaTeX file reference list."""
+        number_pattern = re.compile('(?<=CSLLeftMargin{)([0-9]*)')
+        url_pattern = re.compile('(?<=url{)(.*)(?=}})')
+        cached_number = None
+        return_dict = {}
+
+        for line in raw_file:
+            number = re.search(number_pattern, line)
+            url = re.search(url_pattern, line)
+
+            try:
+                cached_number = int(number.group())
+                return_dict[cached_number] = None
+            except:
+                pass
+
+            try:
+                return_dict[cached_number] = url.group()
+            except:
+                pass
+        
+        return return_dict
 
 def main() -> None:
     """Execute script."""
@@ -48,6 +74,8 @@ def main() -> None:
         metavar='LaTeX File'
     )
     args = parser.parse_args()
+
+    reference_checker = ReferenceChecker(args.file)
 
 def run_script(name: str = __name__) -> None:
     """Run the main function if file is run as a script.

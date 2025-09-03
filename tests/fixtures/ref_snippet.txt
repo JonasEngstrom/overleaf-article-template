@@ -1,0 +1,16 @@
+\subsection*{References}\label{references}
+\addcontentsline{toc}{subsection}{References}
+
+\protect\phantomsection\label{refs}
+\begin{CSLReferences}{0}{1}
+\bibitem[\citeproctext]{ref-grubb_reduction_2015}
+\CSLLeftMargin{1. }%
+\CSLRightInline{Grubb A, Lindström V, Jonsson M, Bäck SE, Åhlund T, Rippe B, et al. Reduction in glomerular pore size is not restricted to pregnant women. Evidence for a new syndrome: {``Shrunken pore syndrome.''} Scand J Clin Lab Invest {[}Internet{]}. 2015 Apr 28;75(4):333--40. Available from: \url{http://www.tandfonline.com/doi/full/10.3109/00365513.2015.1025427}}
+
+\bibitem[\citeproctext]{ref-oberg_potential_2021}
+\CSLLeftMargin{2. }%
+\CSLRightInline{Öberg CM, Lindström M, Grubb A, Christensson A. Potential relationship between {eGFR}\(_{\textrm{cystatin C}}\) /{eGFR}\(_{\textrm{creatinine}}\)‐ratio and glomerular basement membrane thickness in diabetic kidney disease. Physiol Rep {[}Internet{]}. 2021;9(13):e14939. Available from: \url{https://onlinelibrary.wiley.com/doi/10.14814/phy2.14939}}
+
+\end{CSLReferences}
+
+\end{document}

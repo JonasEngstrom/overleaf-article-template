@@ -9,6 +9,12 @@ import ref_check
 
 class TestRefCheck(unittest.TestCase):
     """Test case for ref_check.py."""
+
+    @classmethod
+    def setUpClass(cls):
+        """Load test fixture from file."""
+        with open(os.path.join('tests', 'fixtures', 'ref_snippet.txt'), 'r') as file:
+            cls.ref_snippet = file.readlines()
     
     @patch('os.path.isfile', return_value=False)
     def test_file_does_not_exist(self, _) -> None:
@@ -28,6 +34,13 @@ class TestRefCheck(unittest.TestCase):
         """Test that read_file_contents works correctly."""
         test_checker = ref_check.ReferenceChecker('')
         self.assertEqual(test_checker.read_file_contents(''), ['data'])
+    
+    @patch('os.path.isfile', return_value=True)
+    @patch('builtins.open', new_callable=mock_open)
+    def test_parse_file(self, _1, _2):
+        """Test that file parses correctly."""
+        test_checker = ref_check.ReferenceChecker('')
+        self.assertEqual(test_checker.parse_file(self.ref_snippet), {1: 'http://www.tandfonline.com/doi/full/10.3109/00365513.2015.1025427', 2: 'https://onlinelibrary.wiley.com/doi/10.14814/phy2.14939'})
 
     @patch.object(sys, 'argv', ['ref_check.py'])
     def test_main(self):
