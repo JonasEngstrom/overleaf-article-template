@@ -16,6 +16,8 @@ class ReferenceChecker:
     Checkup Database to help in determining whether all references are from
     serious journals."""
 
+    headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36"}
+
     def __init__(self, file_path: str) -> None:
         """Initialize ReferenceChecker object.
         
@@ -65,7 +67,7 @@ class ReferenceChecker:
     async def get_request(self, number: int, url: str) -> None:
         """Make an HTTP get request to a URL in a dict, by number key."""
         try:
-            response = requests.get(url)
+            response = requests.get(url, headers=self.headers)
             self.response_dict[number] = {'url': url, 'response': response}
         except:
             self.response_dict[number] = {'url': None, 'response': None}
