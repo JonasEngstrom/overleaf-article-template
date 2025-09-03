@@ -1,7 +1,9 @@
 """Unit tests for ref_check.py, Jonas Engström, 2025-09-03"""
 
 import unittest
-from unittest.mock import patch
+import os
+import sys
+from unittest.mock import patch, mock_open
 
 import ref_check
 
@@ -11,14 +13,23 @@ class TestRefCheck(unittest.TestCase):
     @patch('os.path.isfile', return_value=False)
     def test_file_does_not_exist(self, _) -> None:
         """Test that __init__ exits if file does not exist."""
-        with self.assertRaises(SystemExit) as printed_message:
-            ref_check.ReferenceChecker()
+        with self.assertRaises(SystemExit):
+            ref_check.ReferenceChecker('')
     
     @patch('os.path.isfile', return_value=True)
     def test_file_exists(self, _) -> None:
         """Test that __init__ does not exit if file exits."""
-        ref_check.ReferenceChecker()
+        with self.assertRaises(FileNotFoundError):
+            ref_check.ReferenceChecker('')
+    
+    @patch('os.path.isfile', return_value=True)
+    @patch('builtins.open', new_callable=mock_open, read_data='data')
+    def test_read_file_contents(self, _1, _2) -> None:
+        """Test that read_file_contents works correctly."""
+        test_checker = ref_check.ReferenceChecker('')
+        self.assertEqual(test_checker.read_file_contents(''), ['data'])
 
+    @patch.object(sys, 'argv', ['ref_check.py'])
     def test_main(self):
         """Test main."""
         ref_check.main()
