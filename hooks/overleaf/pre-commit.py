@@ -18,7 +18,8 @@ for tex_file in list(filter(lambda x: x.endswith('.tex'), os.listdir())):
     with open(tex_file, 'r') as input_file:
         input_text = input_file.read()
 
-    relative_paths = input_text.replace(working_directory, '.')
+    relative_paths = (input_text.replace('{overleaf/', '{./')
+                      .replace(working_directory, '.'))
 
     # Format references if preserve-cite-keys.csl is being used.
     def format_reference(match_object):
